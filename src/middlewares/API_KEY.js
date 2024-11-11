@@ -1,8 +1,8 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-const ApiKeyValidation = (req, res, next) =>{
-    const apiKey =  req.header['x-api-key'];
+const apiKeyValidation = (req, res, next) =>{
+    const apiKey =  req.headers['x-api-key'];
     if(!apiKey){
         return res.status(403).send('Authentication error')
     }
@@ -13,4 +13,4 @@ const ApiKeyValidation = (req, res, next) =>{
     }
 }
 
-export default ApiKeyValidation;
+export default apiKeyValidation;
