@@ -1,16 +1,16 @@
-### To-DO_App
+# To-DO_App
 
 ## how to use
 
-# fork the repository
+### fork the repository
 ```
 git clone "https://github.com/JuanB-D/To-Do_app.git
 ```
-# Install dependeces 
+### Install dependeces 
 ```
 npm install
 
-# make a .env file with the next info
+### make a .env file with the next info
 ```
 API_KEY=
 MONGODB_URI=
