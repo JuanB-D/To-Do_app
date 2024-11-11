@@ -16,9 +16,12 @@ API_KEY=
 MONGODB_URI=
 JWT_SECRET_KEY=
 PORT= //optional
-```
+ ```
 
-# scripts
+# scripts 
+ ```
 
 1. npm start // normally with node
 2. npm run dev // starts with nodemon
+
+```
