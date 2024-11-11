@@ -93,4 +93,11 @@ registerForm.addEventListener('submit', async(e) =>{
     }
     message.style.color = 'green'
     message.innerHTML = 'Register succesfully'
+    window.location.href = './log.html'
+})           
+
+const goToLogin = document.getElementById('Login');
+goToLogin.addEventListener('click', (e) =>{
+    e.preventDefault()
+    window.location.href = './log.html'
 })
