@@ -1,10 +1,18 @@
 {
   "dependencies": {
     "bcrypt": "^5.1.1",
+<<<<<<< HEAD
+    "cookie-parser": "^1.4.7",
+=======
+>>>>>>> main
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
+<<<<<<< HEAD
+    "mongoose": "^8.8.1",
+=======
+>>>>>>> main
     "nodemon": "^3.1.7"
   },
   "name": "p1",
