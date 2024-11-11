@@ -5,5 +5,6 @@ const authRouters = express.Router();
 
 authRouters
     .post('/register', apiKeyValidation, authController.Register)
+    .post('/login', apiKeyValidation, authController.Login)
 
 export default authRouters;
