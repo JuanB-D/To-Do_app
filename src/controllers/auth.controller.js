@@ -31,7 +31,9 @@ const authController = {
 
             const response = await authService.Login(email, password);
             res.cookie('token', response.token, {httpOnly: true})
-            res.status(200).send({data: {name:response.data.name, email}})
+            res.cookie('email', response.data.email, {httpOnly: true})
+            res.cookie('name', response.data.name, {httpOnly: true})
+            res.status(200).send('register succesfully')
         }
         catch(error){
             res.status(400).send(`error: ${error}`)
