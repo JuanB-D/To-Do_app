@@ -30,9 +30,8 @@ const authController = {
             }
 
             const response = await authService.Login(email, password);
-            const {name} = response;
             res.cookie('token', response.token, {httpOnly: true})
-            res.status(200).send({data: {name, email}})
+            res.status(200).send({data: {name:response.data.name, email}})
         }
         catch(error){
             res.status(400).send(`error: ${error}`)
